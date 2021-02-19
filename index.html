@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Speach</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <div class="container center">
+    <h2>Welcome to the Speach!</h2>
+    <textarea id="speach_result"></textarea>
+    <div class="btn-group">
+      <button type="button" id="speach_start" class="button button-success">Speach Start</button>
+      <button type="button" id="speach_stop" class="button button-danger">Stop</button>
+      <button type="button" id="speach_clear" class="button">Clear</button>
+    </div>
+  </div>
+  <script src="./dist/speach.min.js"></script>
+  <script>
+    new Speach({
+      language: 'en-US',
+      html: {
+        buttons: {
+          start: '#speach_start',
+          stop: '#speach_stop',
+          clear: '#speach_clear'
+        },
+        result: '#speach_result',
+      }
+    }).run();
+  </script>
+</body>
+</html>
