@@ -1,5 +1,5 @@
 # The Speach
-**A simple voice recognizer. **
+**A simple voice recognizer.**
 
 ## Installation
 
